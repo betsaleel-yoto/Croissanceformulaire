@@ -1,0 +1,266 @@
+<html><head><base href="https://websim.creationengine.blog/mirror-form/">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>formulaire d'inscription</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+<style>
+    body, html {
+        margin: 0;
+        padding: 0;
+        font-family: 'Arial', sans-serif;
+        background: linear-gradient(135deg, #0D0D2B, #1C1C34);
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        color: #FFFFFF;
+    }
+
+    .container {
+        max-width: 800px;
+        width: 90%;
+        padding: 40px;
+        box-sizing: border-box;
+    }
+
+    .logo-container {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+
+    img.logo {
+        width: 150px;
+        filter: drop-shadow(0 0 10px rgba(87, 225, 192, 0.5));
+    }
+
+    h1 {
+        color: #FFFFFF;
+        text-shadow: 0 0 20px rgba(255, 255, 255, 0.5), 0 0 30px rgba(0, 0, 255, 0.7);
+        font-size: 48px;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    .intro {
+        color: #C4C4C4;
+        font-size: 18px;
+        text-align: center;
+        margin-bottom: 40px;
+    }
+
+    .cta {
+        color: #12C99D;
+        font-size: 24px;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 30px;
+    }
+
+    form {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 30px;
+        border-radius: 15px;
+        backdrop-filter: blur(10px);
+    }
+
+    .form-group {
+        position: relative;
+        margin-bottom: 20px;
+    }
+
+    .form-group i {
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        color: rgba(87, 225, 192, 0.8);
+        font-size: 20px;
+        text-shadow: 0 0 5px rgba(255, 255, 255, 0.5);
+    }
+
+    label {
+        display: block;
+        margin-bottom: 5px;
+        color: #C4C4C4;
+    }
+
+    input, textarea {
+        border: 2px solid rgba(87, 225, 192, 0.5);
+        border-radius: 8px;
+        padding: 10px 10px 10px 40px;
+        width: 100%;
+        box-shadow: inset 0 0 10px rgba(255, 255, 255, 0.3);
+        background: rgba(255, 255, 255, 0.1);
+        color: #FFFFFF;
+        box-sizing: border-box;
+    }
+
+    textarea {
+        padding-top: 40px;
+    }
+
+    .form-group-textarea i {
+        top: 30px;
+    }
+
+    input:focus, textarea:focus {
+        border-color: #5F63F2;
+        outline: none;
+        box-shadow: 0 0 10px rgba(87, 225, 192, 0.7);
+    }
+
+    button {
+        background-color: #12C99D;
+        color: white;
+        border-radius: 8px;
+        padding: 12px 24px;
+        border: none;
+        box-shadow: 0 4px 20px rgba(87, 225, 192, 0.25);
+        cursor: pointer;
+        transition: background-color 0.3s ease, transform 0.2s;
+        font-size: 18px;
+        width: 100%;
+    }
+
+    button:hover {
+        background-color: #0FAA8C;
+        transform: scale(1.05);
+    }
+
+    .testimonials {
+        margin-top: 40px;
+        text-align: center;
+    }
+
+    .testimonial {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 20px;
+        border-radius: 10px;
+        margin-bottom: 20px;
+    }
+
+    .testimonial p {
+        font-style: italic;
+        margin-bottom: 10px;
+    }
+
+    .testimonial .author {
+        font-weight: bold;
+        color: #12C99D;
+    }
+
+    @media (max-width: 600px) {
+        h1 {
+            font-size: 36px;
+        }
+
+        .intro, .cta {
+            font-size: 16px;
+        }
+
+        form {
+            padding: 20px;
+        }
+
+        img.logo {
+            width: 120px;
+        }
+
+        .testimonials {
+            margin-top: 30px;
+        }
+    }
+
+    .particles {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+    }
+</style>
+</head>
+<body>
+    <div class="particles" id="particles-js"></div>
+    <div class="container">
+        <div class="logo-container">
+            <img src="https://scontent.ffbm1-1.fna.fbcdn.net/v/t39.30808-6/350025544_133269706388736_1483241972385022764_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=6ee11a&_nc_eui2=AeGaYVmEKY9Tan51tfCE_MyKnp_6RJJlO9Sen_pEkmU71M0-If2Uotwgr_RaLsXPoFQu2Vzw7wEzb1O3q-mmub-j&_nc_ohc=msp7RS-Tb0kQ7kNvgFViMbJ&_nc_zt=23&_nc_ht=scontent.ffbm1-1.fna&_nc_gid=AWiZwQvibjc5wdbTnycVWXc&oh=00_AYCiI_9fHnobNpdcJsu8hlUv_SR9VUgFBB6uxpUokY6Vlw&oe=67022E22" alt="Company Logo" class="logo">
+        </div>
+        <h1>Bienvenue pour une nouvelle aventure!</h1>
+        <p class="intro">Changer votre conception du business!</p>
+        <p class="cta">Rejoignez-nous!</p>
+        <form id="visitorForm">
+            <div class="form-group">
+                <label for="name">Votre Nom</label>
+                <i class="fas fa-user" style="margin-left: 5rem; position: relative; bottom: 1rem;"></i>
+                <input type="text" id="name" name="name" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Votre Email</label>
+                <i class="fas fa-envelope" style="margin-left: 5rem; position: relative; bottom: 1rem;"></i>
+                <input type="email" id="email" name="email" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Numéro whatsapp</label>
+                <i class="fas fa-phone-alt" style="margin-left: 9rem; position: relative; bottom: 1rem;"></i>
+                <input type="tel" id="phone" name="phone" required>
+            </div>
+            <div class="form-group form-group-textarea">
+                <label for="message">Vos attentes</label>
+                <i class="fas fa-comment-dots" style="margin-left: 6rem; position: relative; top:-1rem;"></i>
+                <textarea id="message" name="message" rows="4"></textarea>
+            </div>
+            <button type="submit">Inscrivez-vous</button>
+        </form>
+
+        <div class="testimonials">
+            <div class="testimonial">
+                <p>"C'est au cours de ce genre de conférence que mon business à complétement changé et que j'ai pu avoir plus de résultats et rapidememnt!"</p>
+                <div class="author">- Byyl Yot.</div>
+            </div>
+            <div class="testimonial">
+                <p>"Je pense que c'est une perte de temps d'essayer trop de stratégie le plus important c'est de trouver la meilleure et c'est ce que Constellation m'a offert!"</p>
+                <div class="author">- Ezéchiel Mf.</div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script>
+        particlesJS("particles-js", {
+            particles: {
+                number: { value: 80, density: { enable: true, value_area: 800 } },
+                color: { value: "#ffffff" },
+                shape: { type: "circle", stroke: { width: 0, color: "#000000" }, polygon: { nb_sides: 5 }, },
+                opacity: { value: 0.5, random: false, anim: { enable: false, speed: 1, opacity_min: 0.1, sync: false } },
+                size: { value: 3, random: true, anim: { enable: false, speed: 40, size_min: 0.1, sync: false } },
+                line_linked: { enable: true, distance: 150, color: "#ffffff", opacity: 0.4, width: 1 },
+                move: { enable: true, speed: 6, direction: "none", random: false, straight: false, out_mode: "out", bounce: false, attract: { enable: false, rotateX: 600, rotateY: 1200 } },
+            },
+            interactivity: {
+                detect_on: "canvas",
+                events: { onhover: { enable: true, mode: "repulse" }, onclick: { enable: true, mode: "push" }, resize: true },
+                modes: { grab: { distance: 400, line_linked: { opacity: 1 } }, bubble: { distance: 400, size: 40, duration: 2, opacity: 8, speed: 3 }, repulse: { distance: 200, duration: 0.4 }, push: { particles_nb: 4 }, remove: { particles_nb: 2 } },
+            },
+            retina_detect: true
+        });
+
+        document.getElementById('visitorForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            alert('Merci pour votre intéret. On se retrouve le 28 Octobre.');
+            this.reset();
+        });
+    </script>
+
+    <!-- Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
+</body>
+</html>
