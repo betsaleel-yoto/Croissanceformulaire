@@ -189,22 +189,23 @@
         <p class="intro">Plus qu'une étape! maintenant écrivez-nous sur whatsapp pour confirmer votre place.</p>
 
         <div class="video-container">
-            <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+            <iframe src="https://youtu.be/_EHJzNejPgY?si=TFzauC_LYFLpJwQR" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
         </div>
 
         <p class="whatsapp-contact">
-            <i class="fab fa-whatsapp"></i> Voici le contact whatsapp: +1234567890
+            <i class="fab fa-whatsapp"></i> Voici le contact whatsapp: +243 999 554 069
         </p>
 
         <div class="social-media">
             <a href="https://facebook.com" target="_blank" title="Follow us on Facebook"><i class="fab fa-facebook"></i></a>
-            <a href="https://instagram.com" target="_blank" title="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
-            <a href="https://linkedin.com" target="_blank" title="Connect with us on LinkedIn"><i class="fab fa-linkedin"></i></a>
         </div>
 
         <div class="feedback-form">
             <h3>Notez votre feedback ici</h3>
-            <form id="feedbackForm">
+            <form id="feedbackForm"
+                action="https://formspree.io/f/xbljrdqe"
+                method="POST"
+              >
                 <textarea id="feedback" name="feedback" rows="4" placeholder="tous les feedback ici!"></textarea>
                 <button type="submit">Envoyer</button>
             </form>
@@ -216,12 +217,7 @@
     </div>
 
     <script>
-        document.getElementById('feedbackForm').addEventListener('submit', function(e) {
-            e.preventDefault();
-            alert('Thank you for your feedback!');
-            this.reset();
-        });
-
+        
         // Add subtle animations to social media icons
         document.querySelectorAll('.social-media a').forEach(icon => {
             icon.addEventListener('mouseover', function() {
